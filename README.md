@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python version">
+  <img src="https://img.shields.io/badge/CSV%20Input-Yes-brightgreen" alt="CSV support">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT license">
+</p>
+
 # Elorus CSV Invoice Importer
 
 A Python tool to batch import invoices into Elorus from CSV files. Automatically matches or creates contacts, applies Greek VAT rates, supports test mode, and logs errors for easy review and retry. Designed for fast and simple CSV-based invoicing.
@@ -6,11 +12,11 @@ A Python tool to batch import invoices into Elorus from CSV files. Automatically
 
 ## Features
 
-- Imports contacts & invoices from CSV  
-- Handles new and existing contacts  
-- Logs skipped/failed rows  
-- Resume mode for interrupted runs  
-- Supports various Greek VAT & document types  
+✨ Batch-imports contacts & invoices from CSV  
+🔎 Handles new and existing contacts  
+📝 Logs skipped/failed rows for audit and retry  
+⏸️ Resume mode for interrupted runs  
+🇬🇷 Supports various Greek VAT & document types  
 
 ---
 
@@ -18,8 +24,8 @@ A Python tool to batch import invoices into Elorus from CSV files. Automatically
 
 1. **Clone the repository**
 2. **Edit `config.yaml`**  
-   - Add your Elorus API key and organization ID.
-   - Choose the correct document and tax IDs (see below).
+   - 🗝️ Add your Elorus API key and organization ID.
+   - 📄 Choose the correct document and tax IDs (see below).
 3. **Prepare your `info.csv`:**
    - Required columns: `name`, `email`, `title`, `money`
    - Example:
@@ -33,7 +39,7 @@ A Python tool to batch import invoices into Elorus from CSV files. Automatically
    python main.py
    ```
    - For testing (no real API calls), use `test_run: True` in `config.yaml`.
-   - For real invoices, set `test_run: False` (use with caution!).
+   - ⚡ For real invoices, set `test_run: False` (use with caution!).
 
 ---
 
@@ -88,19 +94,19 @@ skip_log_file: "skipped_rows.txt"
 
 ## Logging & Error Handling
 
-- All logs are saved to `logs/app.log` (rotates automatically).  
-- Skipped/problem rows go to `skipped_rows.txt` for review or retry.  
-- To resume from skipped rows, set `resume: True` in your config.  
+- 📄 All logs are saved to `logs/app.log` (rotates automatically).  
+- ❌ Skipped/problem rows go to `skipped_rows.txt` for review or retry.  
+- ▶️ To resume from skipped rows, set `resume: True` in your config.  
 
 ---
 
 ## FAQ
 
-**Q: Will it create real invoices?**  
-A: Only if `test_run` is `False`. In test mode, nothing is sent to Elorus.
+> **Q: Will it create real invoices?**  
+> 🟢 Only if `test_run` is `False`. In test mode, nothing is sent to Elorus.
 
-**Q: What if something goes wrong?**  
-A: Check `logs/app.log` and `skipped_rows.txt` for error details.
+> **Q: What if something goes wrong?**  
+> 🛠️ Check `logs/app.log` and `skipped_rows.txt` for error details.
 
 ---
 
@@ -112,3 +118,4 @@ MIT License. See [LICENSE](LICENSE).
 
 **Questions?**  
 Open an issue or contact the maintainer.
+
