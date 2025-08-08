@@ -1,0 +1,22 @@
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# VS Code settings (optional)
+.vscode/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Config and logs (never commit secrets/logs)
+config.yaml
+logs/
+skipped_rows.txt
+info.csv
+
+# OS files
+.DS_Store
+Thumbs.db
