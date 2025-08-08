@@ -6,7 +6,14 @@
 
 # Elorus CSV Invoice Importer
 
-A Python tool to batch import invoices into Elorus from CSV files. Automatically matches or creates contacts, applies Greek VAT rates, supports test mode, and logs errors for easy review and retry. Designed for fast and simple CSV-based invoicing.
+Elorus is an online invoicing and business management platform, popular in Greece and other countries, with features that connect to national tax systems like MyData.
+
+Many businesses collect sales data from platforms like Stripe, PayPal, or marketplaces as downloadable CSV files. However, to stay compliant with local tax regulations (like MyData in Greece), they need to generate official, tax-compliant invoices—often one by one, which is slow and error-prone.
+
+This tool automates the process:
+It takes your exported CSV data and batch-creates real, tax-compliant invoices in Elorus—saving you hours of manual work and ensuring your records sync with the national tax platform.
+
+For example, if you run a business that gets paid via Stripe, you can export your monthly payouts as a CSV file and instantly turn those into legal invoices in Elorus with a single command, ready to be reported to MyData.
 
 ---
 
@@ -118,4 +125,5 @@ MIT License. See [LICENSE](LICENSE).
 
 **Questions?**  
 Open an issue or contact the maintainer.
+
 
