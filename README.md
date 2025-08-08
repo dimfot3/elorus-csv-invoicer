@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT license">
 </p>
 
-# Elorus CSV Invoice Importer
+# Elorus CSV2MyData
 
 Elorus is an online invoicing and business management platform, popular in Greece and other countries, with features that connect to national tax systems like MyData.
 
@@ -125,5 +125,6 @@ MIT License. See [LICENSE](LICENSE).
 
 **Questions?**  
 Open an issue or contact the maintainer.
+
 
 
